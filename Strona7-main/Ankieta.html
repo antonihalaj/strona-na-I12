@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang=pl>
+<head>
+	<title>Ankieta</title>
+<meta charset=utf-8>
+<link rel="stylesheet" href="css.css" type="text/css"/>
+</head>
+<body class="an">
+    <form action="mailto:antoni.halaj@tm1.edu.pl" method="POST">
+        <h1>Wypełnij formularz:</h1>
+        <label for=imie>Imię:</label>
+        <input type=text name="imie" id="imie" size="11"> <br>
+        
+        <label for=nazwisko>Nazwisko:</label>
+        <input type=text name="nazwisko" > <br>
+        <label for=wiek>Ile masz lat?:</label>
+        <input type="number" name="wiek" id="wiek">
+        <br><br>
+        <h2>Płeć:</h2><br>
+        <input type="radio" id="kobieta" name="plec" value="kobieta">
+        <label for="kobieta">Kobieta</label><br>
+            <input type="radio" id="mezczyzna" name="plec" value="mezczyzna">
+            <label for="mezczyzna">Mężczyzna</label><br>
+                <input type="radio" id="inne" name="plec" value="inne">
+                <label for="inne">inne</label><br><br>
+        <hr><br>
+        <h2>Ile miast odwiedziłeś?</h2> 
+<input type="radio" name="ile" value="1-2">1-2<br>
+<input type="radio" name="ile" value="3-4">3-4<br>
+<input type="radio" name="ile" value="5-6">5-6<br>
+<input type="radio" name="ile" value="7">7<br>
+        <hr>
+        <h2>Które miasta odwiedziłeś?</h2>
+<input type="checkbox" name="Co" value="Tokio">Tokio<br>
+<input type="checkbox" name="Co" value="Nowy Jork">Nowy Jork<br>
+<input type="checkbox" name="Co" value="Maksyk">Maksyk<br>
+<input type="checkbox" name="Co" value="Sao Paulo">Sao Paulo<br>
+<input type="checkbox" name="Co" value="Mumbaj/Bombaj">Mumbaj/Bombaj<br>
+<input type="checkbox" name="Co" value="Szanghaj">Szanghaj<br>
+<input type="checkbox" name="Co" value="Los Angeles">Los Angeles<br>
+<hr>    
+        <h2>Jak podróżowałeś?</h2>
+        <select  multiple size=5>
+        <option>Samochód</option>
+        <option>Motor</option>
+        <option>Pociąg</option>
+        <option>Samolot</option>
+        <option>Na piechotę</option>
+        </select>
+        <br><hr>
+        <h2 for=uwagi>Uwagi:</h2><br>
+        <textarea name="uwagi" cols="20" rows=7 maxlength="50">Tekst domyślny</textarea>
+        <br>
+        <input type="reset" value="Wyczyść">
+        <input type="submit" value="Wyślij">
+        </form>
+        <a class="link" href=index.html>Strona główna</a>
+</body>
+</html>
